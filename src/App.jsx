@@ -6,31 +6,25 @@ import Login from "./screens/LoginPage";
 import { useSelector } from "react-redux";
 
 function App() {
-  // const user = useSelector((state) => state.user.user);
+  const user = useSelector((state) => state.user.user);
 
   return (
     <Routes>
-  
       <Route
         path="/"
-        // element={!user ? <Login /> : <Navigate to="/docnova" replace />}
-        element={<Login /> }
+        element={!user ? <Login /> : <Navigate to="/docnova" replace />}
       />
-
 
       <Route element={<Layout />}>
         <Route
           path="/docnova"
-          // element={user ? <Home /> : <Navigate to="/" replace />}
-          element={<Home />}
+          element={user ? <Home /> : <Navigate to="/" replace />}
         />
         <Route
           path="/details"
-          // element={user ? <Details /> : <Navigate to="/" replace />}
-          element={<Details />}
+          element={user ? <Details /> : <Navigate to="/" replace />}
         />
       </Route>
-
 
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

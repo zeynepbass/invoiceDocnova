@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useSelector } from "react-redux";
 import { Card, Avatar, Row, Col, Divider, Tag, Space, Typography } from "antd";
 import { useTranslation } from "react-i18next";
