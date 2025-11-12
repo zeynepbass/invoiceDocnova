@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import { Row, Col } from "antd";
+import {  Row, Col, Space } from "antd";
+import Select from "../../../components/Select";
 import Dropdown from "../../../components/Dropdown";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -49,7 +50,10 @@ export default function Header() {
         </Col>
        
         <Col style={{ display: "flex", justifyContent: "flex-end" }}>
-    
+          <Space>
+         
+            <Select />
+          </Space>
           <Dropdown
           Logout={Logout}
           user={user}

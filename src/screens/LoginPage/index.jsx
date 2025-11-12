@@ -65,7 +65,7 @@ export default function LoginPage() {
               fontSize: "24px",
               fontWeight: "bold",
               color: "#1e40af",
-              marginBottom: "8px",
+              marginBottom: "2px",
             }}
           >
             {t("welcome")}
@@ -75,7 +75,7 @@ export default function LoginPage() {
             style={{
               textAlign: "center",
               color: "#6b7280",
-              marginBottom: "24px",
+              marginBottom: "10px",
             }}
           >
             {t("loginMessage")}
